@@ -7,6 +7,8 @@ html, body {
     height: 100%;
     width: 100%;
     z-index: 0;
+    font-family: SanFran-Ultralight;
+
 }
 
 
@@ -113,7 +115,7 @@ header ul li a {
 
 /*--------------------------------------------------------------------*/
 
-.projects {
+#projects {
     display: flex;
     -webkit-flex-flow: row wrap;
     align-items: center;
@@ -126,7 +128,7 @@ header ul li a {
 div.project_class {
     position: relative;
     width: 350px;
-    height: 400px;
+    /*height: 420px;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     text-align: center;
     margin: 20px;
@@ -147,18 +149,82 @@ div.project_image {
 }
 
 div.project_info {
-    padding: 10px;
+    margin: 20px 20px 0px 20px;
+    padding: 0px 0px 10px 0px;
+    height: 80px;
+    /*background-color: #aeaeae;*/
+    text-align: left;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #E0E0E0;
+}
+
+div.project_info h1 {
+    font-family: SanFran-Regular;
+    font-size: 20px;
+    color: #4B4F56;
+}
+
+div.project_info h2 {
+    margin-top: 11px;
+    font-size: 15px;
+    color: #90949C;
 }
 
 div.project_links {
-    padding: 10px;
+    padding: 20px;
+    text-align: left;
+    font-family: SanFran-UltraLight;
+    font-size: 10px;
+
 }
 
 div.project_class:hover {
     top: -10px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+#codeIcons {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    /*margin handled by js*/
+}
 
 
+div.codeIcon_class {
+    width: 50px;
+    height: 70px;
+    text-align: center;
+    margin: 20px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+div.codeIcon_image {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: grayscale(0%); filter: grayscale(0%);
+
+}
+
+div.codeIcon_info {
+    font-family: SanFran-UltraLight;
+    font-size: 9px;
+    color: #4B4F56;
+    display: none;
+    padding-top: 10px;
+}
+
+
+div.codeIcon_image:hover + div.codeIcon_info {
+    display: block;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -171,14 +237,54 @@ div.project_class:hover {
     border-top-style: solid;
     border-top-width: 1px;
     border-color: #E0E0E0;
+}
+
+.linksList {
+    display: block;
+    list-style-type: none;
+    margin-top: 75px;
+    height: 50px;
+
+}
+
+.newlogo {
+    float: left;
+    margin-top: 0px;
+}
+
+.copyright {
+    float: left;
+    margin: 15px 20px 0px 20px;
+    /*display: none;*/
     font-family: SanFran-UltraLight;
-    /*background-color: #aeaeae;*/
+    font-size: 14px;
+}
+
+.smlogo {
+    float: right;
+    list-style-type: none;
+    margin-left: 20px;
+    margin-top: 15px;
+    -webkit-filter: grayscale(100%); filter: grayscale(100%);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.smlogo:hover {
+    -webkit-filter: grayscale(0%); filter: grayscale(0%);
+
 }
 
 /*----------------------------------------------------------------------------*/
 @font-face {
     font-family: SanFran-UltraLight;
     src: url('../fonts/SanFranciscoDisplay-Ultralight.otf');
+}
+@font-face {
+    font-family: SanFran-Regular;
+    src: url('../fonts/SanFranciscoDisplay-Regular.otf');
 }
 
 /*----------------------------------------------------------------------------*/
