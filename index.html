@@ -10,6 +10,7 @@
 
     <title>Varun Ballari</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
 </head>
@@ -17,25 +18,33 @@
 <body>
     <header>
         <ul>
-            <li class="li1"><a href="index.html" target="_self">Code</a></li>
-            <li class="li1"><a href="index.html" target="_self">Design</a></li>
-            <li class="li1"><a href="index.html" target="_self">Photography</a></li>
-            <li class="li1"><a href="index.html" target="_self">About</a></li>
+            <li class="header_logo"><div></div></li>
+            <li class="name">Varun Ballari</li>
             <li class="li1"><a href="index.html" target="_self">Contact</a></li>
-
+            <li class="li1"><a href="index.html" target="_self">About</a></li>
+            <li class="li1"><a href="index.html" target="_self">Photography</a></li>
+            <li class="li1"><a href="index.html" target="_self">Design</a></li>
+            <li class="li1"><a href="index.html" target="_self">Code</a></li>
         </ul>
     </header>
+
+
+    <!-- <div id="form"><form><textarea class="form-control" rows="1" id="comment"></textarea></form></div> -->
+
     <section class="main">
         <div id="heading">
-            <div id="mypic"></div>
+            <!-- <div id="mypic"></div> -->
             <div id="myinfo">
-                <h1>Varun Ballari</h1>
-                <h2>Georiga Tech</h2>
+                <h1>My Work</h1>
+                <h2>Collection of Apps, Websites, Posters, Flyers, Photos, Videos, etc.</h2>
             </div>
         </div>
+
         <div id = "projects"></div>
 
-        <div id = "codeIcons"></div>
+        <div id = "uisa" style="display:none;"></div>
+
+        <!-- <div id = "codeIcons"></div> -->
 
         <div id="links">
             <ui class="linksList">
@@ -56,25 +65,39 @@
 
 
     <script>
-        var offset = $("#first").offset();
-        $("#heading").css("margin-left", offset.left);
-        $("#heading").css("margin-right", offset.left);
-        $("#links").css("margin-left", offset.left);
-        $("#links").css("margin-right", offset.left);
-        $("#codeIcons").css("margin-left", offset.left);
-        $("#codeIcons").css("margin-right", offset.left);
+        console.log($(document).width());
 
+        var visible = $("#first").is(":visible");
+        if (visible) {
+            var offset = $("#first").offset().left;
+        } else {
+            var offset = $(document).width() / 8;
+
+        }
+        var offset2 = $(document).width() / 12;
+
+        $("#heading").css("margin-left", offset);
+        $("#heading").css("margin-right", offset);
+        $("#links").css("margin-left", offset);
+        $("#links").css("margin-right", offset);
+        $("#codeIcons").css("margin-left", offset);
+        $("#codeIcons").css("margin-right", offset);
 
         $(window).on('resize', function(){
+            var visible = $("#first").is(":visible");
+            if (visible) {
+                var offset = $("#first").offset().left;
+            } else {
+                var offset = $(document).width() / 10;
+            }
             var offset = $("#first").offset();
-            $("#heading").css("margin-left", offset.left);
-            $("#heading").css("margin-right", offset.left);
-            $("#links").css("margin-left", offset.left);
-            $("#links").css("margin-right", offset.left);
-            $("#codeIcons").css("margin-left", offset.left);
-            $("#codeIcons").css("margin-right", offset.left);
+            $("#heading").css("margin-left", offset);
+            $("#heading").css("margin-right", offset);
+            $("#links").css("margin-left", offset);
+            $("#links").css("margin-right", offset);
+            $("#codeIcons").css("margin-left", offset);
+            $("#codeIcons").css("margin-right", offset);
         });
-
     </script>
 
 

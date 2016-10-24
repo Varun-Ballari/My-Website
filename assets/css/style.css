@@ -8,77 +8,91 @@ html, body {
     width: 100%;
     z-index: 0;
     font-family: SanFran-Ultralight;
-
 }
-
-
 /*----------------------------------------------------------------------------*/
 
 header {
     position: fixed;
     width: 100%;
     background: rgba(255, 255, 255, 0.97);
-    top:0px;
+    top: 0px;
     z-index: 10;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.03), 0 6px 20px 0 rgba(0, 0, 0, 0.03);
-
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
 }
 
 header ul {
-    height: 60px;
+    height: 50px;
     padding-left: 150px;
     padding-right: 150px;
-
     list-style: none;
-    display: flex;
-    -webkit-flex-flow: row wrap;
+    display: block;
+    /*-webkit-flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
 }
 
 header ul li {
     text-align: center;
+    align-items: center;
     justify-content: center;
-    display: inline-block;
+    display: block;
 }
 
 header ul li a {
     text-decoration: none;
-    display: inline-block;
+    display: block;
     color: black;
 }
 
+.header_logo div{
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    float: left;
+    margin-right: 25px;
+}
+
+.name {
+    float: left;
+    font-family: SanFran-UltraLight;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
 .li1 {
-    flex: 1;
-    font-family: SanFran-Ultralight;
+    /*flex: 1;*/
+    font-family: SanFran-UltraLight;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 12px;
-
+    float: right;
+    margin-left: 50px;
+    margin-top: 20px;
 }
-
 
 /*--------------------------------------------------------------------*/
 
 .main {
-    margin-top: 60px;
+    margin-top: 50px;
     background-color: #FCFCFC;
     display: block;
     text-align: left;
-
 }
 
 #heading {
     display: block;
     /*margins handled by javascript*/
-    height: 100px;
     padding-top: 60px;
-    padding-bottom: 40px;
-    border-bottom-style: solid;
+    padding-bottom: 30px;
+    /*border-bottom-style: solid;
     border-bottom-width: 1px;
-    border-color: #E0E0E0;
-    /*background-color: #aeaeae;*/
+    border-color: #E0E0E0;*/
 }
 
 #mypic {
@@ -91,26 +105,25 @@ header ul li a {
     float: left;
     margin-right: 30px;
     border-radius: 50px;
-
 }
 
 #myinfo {
     display: block;
+    color: #4B4F56;
+    padding: 5px;
 }
 
 #myinfo h1 {
-    font-family: SanFran-Ultralight;
-    font-size: 30px;
-    color: #4B4F56;
-    padding: 5px;
-
+    font-family: SanFran-UltraLight;
+    font-size: 50px;
+    font-weight: 900;
 }
 
 #myinfo h2 {
-    font-family: SanFran-Ultralight;
-    font-size: 15px;
-    color: #4B4F56;
-    padding: 5px;
+    font-family: SanFran-UltraLight;
+    font-size: 20px;
+    font-weight: 900;
+    color: #90949C;
 }
 
 /*--------------------------------------------------------------------*/
@@ -121,15 +134,12 @@ header ul li a {
     align-items: center;
     justify-content: center;
     margin: 20px;
-
 }
-
 
 div.project_class {
     position: relative;
     width: 350px;
-    /*height: 420px;*/
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
     text-align: center;
     margin: 20px;
     top: 0px;
@@ -141,47 +151,55 @@ div.project_class {
 }
 
 div.project_image {
-    background-color: #4CAF50;
-    color: white;
+    /*background-color: #4CAF50;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 10px;
     font-size: 40px;
     height: 250px;
+
 }
 
 div.project_info {
     margin: 20px 20px 0px 20px;
     padding: 0px 0px 10px 0px;
-    height: 80px;
-    /*background-color: #aeaeae;*/
+    height: 75px;
     text-align: left;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-color: #E0E0E0;
+    -webkit-filter: grayscale(100%); filter: grayscale(100%);
 }
 
 div.project_info h1 {
     font-family: SanFran-Regular;
-    font-size: 20px;
+    font-size: 28px;
     color: #4B4F56;
 }
 
 div.project_info h2 {
-    margin-top: 11px;
+    font-family: SanFran-UltraLight;
+    margin-top: 10px;
     font-size: 15px;
     color: #90949C;
 }
 
 div.project_links {
-    padding: 20px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-color: #E0E0E0;
+    margin: 20px;
     text-align: left;
     font-family: SanFran-UltraLight;
     font-size: 10px;
+    display: block;
+    height: 45px;
+    padding: 20px 0px 0px 0px;
+    -webkit-filter: grayscale(100%); filter: grayscale(100%);
 
 }
 
 div.project_class:hover {
     top: -10px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
 }
 
 #codeIcons {
@@ -192,8 +210,56 @@ div.project_class:hover {
     /*margin handled by js*/
 }
 
+.language {
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    float: left;
+    margin-right: 10px;
+}
 
-div.codeIcon_class {
+.like {
+    height: 25px;
+    width: 100px;
+    float: right;
+    display: block;
+    /*margin: 10px;*/
+    font-size: 12px;
+}
+
+.heart {
+    height: 25px;
+    float: right;
+    color: red;
+    border: solid;
+    border-color: red;
+    border-width: thin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#num_likes {
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+    width: 75px;
+}
+
+#like_symbol {
+    float: right;
+    border-radius: 0px 5px 5px 0px;
+    width: 25px;
+}
+
+#like_symbol:hover {
+    background-color: red;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*div.codeIcon_class {
     width: 50px;
     height: 70px;
     text-align: center;
@@ -225,6 +291,163 @@ div.codeIcon_info {
 
 div.codeIcon_image:hover + div.codeIcon_info {
     display: block;
+}*/
+
+#wave {
+    display: block;
+    padding-top: 60px;
+}
+
+.back {
+    background-image: url('../images/back.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left:50px;
+    transition: 0.2s;
+}
+
+.back:hover {
+    margin-left:47px;
+}
+
+#fullPage_APP {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#iphonePage {
+    display: block;
+    align-self: center;
+    min-width: 80%;
+}
+
+.header-image {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 70%;
+}
+
+#appLogo {
+    background-image: url("../images/WaveArtWork.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:75px;
+    height:75px;
+}
+
+.button {
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: #eafbcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share {
+    margin: 50px 70px 50px 70px;
+    display: block;
+    background-color: #fabdce;
+    height: 35px;
+}
+
+.shareButtons {
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    background-color: #eafbcd;
+    margin-right: 50px;
+}
+
+textarea {
+   resize: none;
+}
+
+
+#form {
+    width: 200px;
+    float: left;
+    transition: 1s;
+}
+
+#details h1 {
+    font-family: SanFran-UltraLight;
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #4B4F56;
+}
+
+#details p {
+    font-family: SanFran-UltraLight;
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #90949C;
+    /*margin-right: 100px;*/
+}
+
+/*----------------------------------------------------------------------------*/
+
+.texts {
+    margin: 100px;
+}
+.texts p, .texts h1, .texts h2, .texts h3, .texts h4, .texts h5 {
+    max-width: 600px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texts h2 {
+    font-size: 28px;
+    font-weight: 500;
+    font-size: 28px;
+    color: #4B4F56;
+    line-height: 32px;
+    margin-top: 60px;
+    margin-bottom: 24px;
+}
+
+.texts p {
+    font-size: 18px;
+    line-height: 26px;
+    color: #90949C;
+    margin-bottom: 24px;
+}
+/*----------------------------------------------------------------------------*/
+
+#app_Images {
+    /*max-width: 1000px;*/
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    /*margin handled by javascript*/
+}
+
+.app_Image {
+    width: 260px;
+    height: 462.45px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 /*----------------------------------------------------------------------------*/
@@ -232,8 +455,8 @@ div.codeIcon_image:hover + div.codeIcon_info {
     display: block;
     /*margins handled by javascript*/
     height: 200px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 74px;
+    padding-bottom: 75px;
     border-top-style: solid;
     border-top-width: 1px;
     border-color: #E0E0E0;
@@ -242,7 +465,7 @@ div.codeIcon_image:hover + div.codeIcon_info {
 .linksList {
     display: block;
     list-style-type: none;
-    margin-top: 75px;
+    /*margin-top: 75px;*/
     height: 50px;
 
 }
@@ -274,7 +497,6 @@ div.codeIcon_image:hover + div.codeIcon_info {
 
 .smlogo:hover {
     -webkit-filter: grayscale(0%); filter: grayscale(0%);
-
 }
 
 /*----------------------------------------------------------------------------*/
