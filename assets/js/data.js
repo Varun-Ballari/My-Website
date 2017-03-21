@@ -41,7 +41,7 @@ var projects = [
         "facebookLink": "https://www.facebook.com/"
     },
     {
-        "project_name" : "WAVE iOS App1",
+        "project_name" : "ATLAS iOS App",
         "type" : "app",
         "likes" : 1,
         "languages" : ["assets/images/icons/java.png"],
@@ -62,7 +62,7 @@ var projects = [
     },
 
     {
-        "project_name" : "UISA Website1",
+        "project_name" : "iOS Club Website",
         "type" : "website",
         "likes" : 61,
         "languages" : ["assets/images/icons/python.png", "assets/images/icons/html.png", "assets/images/icons/css.png", "assets/images/icons/js.png"],
@@ -82,8 +82,8 @@ var projects = [
         "facebookLink": "https://www.facebook.com/"
     },
     {
-        "project_name" : "WAVE iOS App2",
-        "type" : "app",
+        "project_name" : "ATL Tamasha 2015",
+        "type" : "design",
         "likes" : 1,
         "languages" : ["assets/images/icons/java.png"],
         "proj_details" : "Bollywood is the sobriquet for the Hindi language film industry based in Mumbai, India.",
@@ -103,8 +103,8 @@ var projects = [
     },
 
     {
-        "project_name" : "UISA Website2",
-        "type" : "website",
+        "project_name" : "A-Town Showdown 2015",
+        "type" : "design",
         "likes" : 61,
         "languages" : ["assets/images/icons/heroku.png", "assets/images/icons/postgres.png", "assets/images/icons/node.png"],
         "proj_details" : "Bollywood is the sobriquet for the Hindi language film industry based in Mumbai, India.",
@@ -123,7 +123,7 @@ var projects = [
         "facebookLink": "https://www.facebook.com/"
     },
     {
-        "project_name" : "WAVE iOS App3",
+        "project_name" : "India Club 2015-2016",
         "type" : "app",
         "likes" : 1,
         "languages" : ["assets/images/icons/flask.png"],
@@ -144,8 +144,8 @@ var projects = [
     },
 
     {
-        "project_name" : "UISA Website3",
-        "type" : "website",
+        "project_name" : "Run For SEWA",
+        "type" : "design",
         "likes" : 61,
         "languages" : ["assets/images/icons/nikon.png", "assets/images/icons/d600.png"],
         "proj_details" : "Bollywood is the sobriquet for the Hindi language film industry based in Mumbai, India.",

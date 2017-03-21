@@ -455,8 +455,8 @@ textarea {
     display: block;
     /*margins handled by javascript*/
     height: 200px;
-    padding-top: 74px;
-    padding-bottom: 75px;
+    margin: 150px 
+    padding: 0px 75px;
     border-top-style: solid;
     border-top-width: 1px;
     border-color: #E0E0E0;

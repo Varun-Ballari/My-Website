@@ -2,7 +2,7 @@ function getProjects(arr) {
     var out = "";
     for(var i = 0; i < arr.length; i++) {
         if (i == 0) {
-            out += '<div class="project_class" id="first">'
+            out += '<div class="project_class" id='+ i +'>'
         } else {
             out += '<div class="project_class">'
         }
